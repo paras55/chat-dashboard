@@ -68,8 +68,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # App title and description
-st.markdown('<h1 class="app-title">AI Chat Suite</h1>', unsafe_allow_html=True)
-st.markdown('<p class="app-description">Explore our advanced AI-powered chat applications</p>', unsafe_allow_html=True)
+st.markdown('<h1 class="app-title">AI Chat Apps by Paras</h1>', unsafe_allow_html=True)
+st.markdown('<p class="app-description">Built with Langchain, ChromaDB, Pinecone, and Streamlit</p>', unsafe_allow_html=True)
 
 # Create three columns for the buttons
 col1, col2, col3 = st.columns(3)
