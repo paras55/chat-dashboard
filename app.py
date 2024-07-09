@@ -7,6 +7,7 @@ st.set_page_config(page_title="AI Chat Dashboard", layout="wide", initial_sideba
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
     
     body {
         font-family: 'Roboto', sans-serif;
@@ -64,6 +65,11 @@ st.markdown("""
         padding: 1rem;
         font-size: 0.9rem;
     }
+    .social-links a {
+        color: #808080;  /* Greyish color for the icons */
+        font-size: 2rem;
+        margin: 0 10px;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -101,5 +107,15 @@ with col3:
     </a>
     """, unsafe_allow_html=True)
 
-# Footer
-st.markdown('<div class="footer">© 2024 Your Company Name. All rights reserved.</div>', unsafe_allow_html=True)
+# Footer with social links
+st.markdown("""
+<div class="footer">
+    © 2024 Your Company Name. All rights reserved.
+    <div class="social-links">
+        <a href="https://www.instagram.com/parasmadan.in/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/paras-madan-a9863716b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/ParasMadan9" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://parasmadan.in/" target="_blank"><i class="fas fa-globe"></i></a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
